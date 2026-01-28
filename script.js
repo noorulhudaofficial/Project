@@ -1,4 +1,5 @@
 // SIGNUP
+
 function signup(){
   let name = signupName.value;
   let email = signupEmail.value;
@@ -21,6 +22,7 @@ function signup(){
 }
 
 // LOGIN
+
 function login(){
   let email = loginEmail.value;
   let pass = loginPass.value;
@@ -41,6 +43,7 @@ function login(){
 }
 
 // DASHBOARD
+
 if(window.location.pathname.includes("dashboard")){
   let savedUser = JSON.parse(localStorage.getItem("userData"));
   let loggedIn = localStorage.getItem("loggedIn");
@@ -54,6 +57,7 @@ if(window.location.pathname.includes("dashboard")){
 }
 
 // LOGOUT
+
 function logout(){
   localStorage.removeItem("loggedIn");
   window.location.href = "login.html";
