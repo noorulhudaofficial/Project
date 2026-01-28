@@ -58,7 +58,6 @@ body{
 }
 
 /* Animations */
-
 .slide-in{
   animation:slide 0.6s ease;
 }
